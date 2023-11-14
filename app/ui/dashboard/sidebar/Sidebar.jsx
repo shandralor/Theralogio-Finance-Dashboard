@@ -24,20 +24,16 @@ const menuItems = [
         icon: <MdDashboard />,
       },
       {
-        title: "Users",
-        path: "/dashboard/users",
+        title: "Clients",
+        path: "/dashboard/clients",
         icon: <MdSupervisedUserCircle />,
       },
-      {
-        title: "Consultations",
-        path: "/dashboard/consultations",
-        icon: <MdShoppingBag />,
-      },
-      {
-        title: "Transactions",
-        path: "/dashboard/transactions",
-        icon: <MdAttachMoney />,
-      },
+      // {
+      //   title: "Consultations",
+      //   path: "/dashboard/consultations",
+      //   icon: <MdShoppingBag />,
+      // },
+      
     ],
   },
   {
@@ -72,12 +68,7 @@ const menuItems = [
         title: "Help",
         path: "/dashboard/help",
         icon: <MdHelpCenter />,
-      },
-      {
-        title: "Logout",
-        path: "/dashboard/teams",
-        icon: <MdLogout />,
-      },
+      }
     ],
   },
 ];
@@ -104,6 +95,10 @@ const Sidebar = () => {
                 </li>
           ))}
         </ul>
+        <button className={styles.logout}>
+          <MdLogout />
+          Log Out
+        </button>
       
     </div>
   );

@@ -1,0 +1,35 @@
+.container{
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form input, .form select {
+    padding: 30px;
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 45%;
+    border:2px solid var(--bgHover)
+}
+
+.buttonDiv{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button{
+    width: 25%;
+    padding:20px;
+    cursor:pointer;
+}
